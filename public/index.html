@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi app de notas con Firebase</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Formulario para agregar notas & contenedor para ver esas notas -->
+      <h1>📝 Mis Notas (Cloud Firestore)</h1>
+
+      <form id="note-form">
+        <input
+          type="text"
+          id="title"
+          placeholder="Título de la nota"
+          required
+        />
+        <textarea
+          id="content"
+          placeholder="Contenido de la nota"
+          required
+        ></textarea>
+        <button type="submit">Agregar Nota</button>
+      </form>
+
+      <div id="notes-container"></div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
